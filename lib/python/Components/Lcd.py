@@ -429,10 +429,10 @@ def InitLcd():
 		config.usage.lcd_ledpowercolor = ConfigSelection(default="1", choices=choices)
 		if exists("/proc/stb/fp/ledpowercolor"):
 			config.usage.lcd_ledpowercolor.addNotifier(setLedPowerColor)
-		config.usage.lcd_ledstandbycolor = ConfigSelection(default="1" if MODEL == "dual" else "3", choices=choices)
+		config.usage.lcd_ledstandbycolor = ConfigSelection(default="1" if MODEL == "dual" else "2", choices=choices)
 		if exists("/proc/stb/fp/ledstandbycolor"):
 			config.usage.lcd_ledstandbycolor.addNotifier(setLedStandbyColor)
-		config.usage.lcd_ledsuspendcolor = ConfigSelection(default="1" if MODEL == "dual" else "2", choices=choices)
+		config.usage.lcd_ledsuspendcolor = ConfigSelection(default="1" if MODEL == "dual" else "3", choices=choices)
 		if exists("/proc/stb/fp/ledsuspendledcolor"):
 			config.usage.lcd_ledsuspendcolor.addNotifier(setLedSuspendColor)
 
