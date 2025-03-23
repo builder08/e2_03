@@ -159,7 +159,7 @@ class SymbolsCheckPoller:
 					self.led = "0"
 			elif self.led == "1":
 				open("/proc/stb/lcd/symbol_rec", "w").write("0")
-		elif BoxInfo.getItem("HiSilicon") and isfile("/proc/stb/fp/ledpowercolor"):
+		elif BoxInfo.getItem("HiSi") and isfile("/proc/stb/fp/ledpowercolor"):
 			import Screens.Standby
 			recordings = len(NavigationInstance.instance.getRecordings(False))
 			if recordings > 0 and not Screens.Standby.inStandby:
