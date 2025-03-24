@@ -18112,7 +18112,7 @@ msgid "TMBD details for event"
 msgstr "Детали TMBD для события"
 
 msgid "TRANSLATOR_INFO"
-msgstr "Коррекция перевода Foxbob - 28.09.2024"
+msgstr "Коррекция перевода BlackFish 24.03.2025"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS файл слишком большой для ISO9660 уровня 1!"
