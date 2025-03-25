@@ -600,7 +600,7 @@ class DistributionInformation(InformationBase):
 		if self.extraSpacing:
 			info.append("")
 		info.append(formatLine("P1", _("Distribution"), BoxInfo.getItem("displaydistro")))
-		info.append(formatLine("P1", _("Distribution build"), formatDate(BoxInfo.getItem("imagebuild"))))
+		info.append(formatLine("P1", _("Distribution build"), formatDate(about.getBuildDateString())))
 		info.append(formatLine("P1", _("Distribution build date"), formatDate(about.getBuildDateString())))
 		info.append(formatLine("P1", _("Distribution architecture"), BoxInfo.getItem("architecture")))
 		if BoxInfo.getItem("imagedir"):
@@ -608,7 +608,7 @@ class DistributionInformation(InformationBase):
 		if BoxInfo.getItem("imagefs"):
 			info.append(formatLine("P1", _("Distribution file system"), BoxInfo.getItem("imagefs").strip()))
 		info.append(formatLine("P1", _("Feed URL"), BoxInfo.getItem("feedsurl")))
-		info.append(formatLine("P1", _("Compiled by"), BoxInfo.getItem("maintainer")))
+		info.append(formatLine("P1", _("Compiled by"), BoxInfo.getItem("displaydistro")))
 		info.append("")
 		info.append(formatLine("S", _("Software information")))
 		if self.extraSpacing:
